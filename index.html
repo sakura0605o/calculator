@@ -4,37 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator | Practice</title>
+    <title>Any Calculator</title>
     <link rel="stylesheet" href="calculator-pra-style.css">
     <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
+
+    <input type="radio" name="classification" id="calculate" class="opt-radio" checked>
+    <input type="radio" name="classification" id="length" class="opt-radio">
+
     <header>
-        <nav>
-            <h1>Calaulator</h1>
-        </nav>
+        <h1>Any Calaulator</h1>
     </header>
 
-
     <div class="calculator">
+        <nav>
+            <label class="btn-block btn-cal" for="calculate">
+                <div class="btn-icon icon-cal"></div>
+                <div class="btn-title title-cal">Calculate</div>
+            </label>
+            <label class="btn-block btn-leng" for="length">
+                <div class="btn-icon icon-leng"></div>
+                <div class="btn-title title-leng">Length</div>
+            </label>
+        </nav>
         <div class="history-block">
             <div class="history-title-block history-background">
                 <div class="history-text-block">
-                    <div class="history-title"><h1>History</h1></div>
-                    <div class="history-subtitle"><h6>You can <b>click on</b> any hitsory to continue the calculation.</h6></div>
-                </div>                
+                    <div class="history-title">
+                        <h1>History</h1>
+                    </div>
+                    <div class="history-subtitle">
+                        <h6>You can <b>click on</b> any hitsory to continue the calculation.</h6>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="calculate-block">
             <div class="calculate">
                 <div class="cal-display">
-                    <div class="cal-display-input cal-display-input-formula"><input type="text" id="cal-formula" class="cal-formula"></div>
-                    <div class="cal-display-input cal-display-input-result"><input type="text" id="cal-result" class="cal-result" disabled></div>
+                    <div class="cal-display-input cal-display-input-formula"><input type="text" id="cal-formula"
+                            class="cal-formula"></div>
+                    <div class="cal-display-input cal-display-input-result"><input type="text" id="cal-result"
+                            class="cal-result" disabled></div>
                 </div>
                 <div class="cal-button">
                     <button class="cal-button-clearall cal-button-size" onclick="">CE</button>
-                    <button class="cal-button-clear cal-button-size" onclick="clearValue()">C</button>                    
+                    <button class="cal-button-clear cal-button-size" onclick="clearValue()">C</button>
                     <button class="cal-button-del cal-button-size" onclick="">del</button>
 
                     <button class="cal-button-opreator-plus cal-button-size" onclick="setoperator('+')">+</button>
@@ -55,13 +72,14 @@
                     <button class="cal-button-1 cal-button-size" onclick="appendNumer('1')">1</button>
                     <button class="cal-button-2 cal-button-size" onclick="appendNumer('2')">2</button>
                     <button class="cal-button-3 cal-button-size" onclick="appendNumer('3')">3</button>
-                    
-                    
+
+
                     <button class="cal-button-0 cal-button-size" onclick="appendNumer('0')">0</button>
                     <button class="cal-button-dot cal-button-size" onclick="appendNumer('.')">.</button>
                 </div>
             </div>
         </div>
+
     </div>
 
 
