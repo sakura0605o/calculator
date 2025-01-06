@@ -44,38 +44,40 @@
         <div class="calculate-block">
             <div class="calculate">
                 <div class="cal-display">
-                    <div class="cal-display-input cal-display-input-formula"><input type="text" id="cal-formula"
-                            class="cal-formula"></div>
-                    <div class="cal-display-input cal-display-input-result"><input type="text" id="cal-result"
-                            class="cal-result" disabled></div>
+                    <div class="cal-display-input cal-display-input-formula">
+                        <input type="text" id="cal-formula" class="cal-formula" value="0"> <!--預設值為0-->
+                        </div> 
+                    <div class="cal-display-input cal-display-input-result">
+                        <input type="text" id="cal-result" class="cal-result" disabled>
+                    </div>
                 </div>
                 <div class="cal-button">
-                    <button class="cal-button-clearall cal-button-size" onclick="">CE</button>
-                    <button class="cal-button-clear cal-button-size" onclick="clearValue()">C</button>
-                    <button class="cal-button-del cal-button-size" onclick="">del</button>
+                    <div class="cal-btn-block btn-block-clearall"><button class="cal-button-clearall cal-button-size" onclick="">CE</button></div>
+                    <div class="cal-btn-block btn-block-clear"><button class="cal-button-clear cal-button-size" onclick="clearValue()">C</button></div>
+                    <div class="cal-btn-block btn-block-del"><button class="cal-button-del cal-button-size" onclick="">del</button></div>
 
-                    <button class="cal-button-opreator-plus cal-button-size" onclick="setoperator('+')">+</button>
-                    <button class="cal-button-opreator- cal-button-size" onclick="">-</button>
-                    <button class="cal-button-opreator- cal-button-size" onclick="">×</button>
-                    <button class="cal-button-opreator- cal-button-size" onclick="">÷</button>
+                    <div class="cal-btn-block btn-block-plus"><button class="cal-button-plus cal-button-size" onclick="setoperator('+')">+</button></div>
+                    <div class="cal-btn-block btn-block-"><button class="cal-button-opreator- cal-button-size" onclick="">-</button></div>
+                    <div class="cal-btn-block btn-block-"><button class="cal-button-opreator- cal-button-size" onclick="">×</button></div>
+                    <div class="cal-btn-block btn-block-"><button class="cal-button-opreator- cal-button-size" onclick="">÷</button></div>
 
-                    <button class="cal-button-7 cal-button-size" onclick="appendNumer('7')">7</button>
-                    <button class="cal-button-8 cal-button-size" onclick="appendNumer('8')">8</button>
-                    <button class="cal-button-9 cal-button-size" onclick="appendNumer('9')">9</button>
-                    <button class="cal-button-opreator- cal-button-size" obclick="">%</button>
+                    <div class="cal-btn-block btn-block-7"><button class="cal-button-7 cal-button-size" onclick="appendNumer('7')">7</button></div>
+                    <div class="cal-btn-block btn-block-8"><button class="cal-button-8 cal-button-size" onclick="appendNumer('8')">8</button></div>
+                    <div class="cal-btn-block btn-block-9"><button class="cal-button-9 cal-button-size" onclick="appendNumer('9')">9</button></div>
+                    <div class="cal-btn-block btn-block-"><button class="cal-button- cal-button-size" obclick="">%</button></div>
 
-                    <button class="cal-button-4 cal-button-size" onclick="appendNumer('4')">4</button>
-                    <button class="cal-button-5 cal-button-size" onclick="appendNumer('5')">5</button>
-                    <button class="cal-button-6 cal-button-size" onclick="appendNumer('6')">6</button>
-                    <button class="cal-button-opreator-equals cal-button-size" onclick="">=</button>
+                    <div class="cal-btn-block btn-block-4"><button class="cal-button-4 cal-button-size" onclick="appendNumer('4')">4</button></div>
+                    <div class="cal-btn-block btn-block-5"><button class="cal-button-5 cal-button-size" onclick="appendNumer('5')">5</button></div>
+                    <div class="cal-btn-block btn-block-6"><button class="cal-button-6 cal-button-size" onclick="appendNumer('6')">6</button></div>
+                    <div class="cal-btn-block btn-block-equals"><button class="cal-button-equals cal-button-size" onclick="">=</button></div>
 
-                    <button class="cal-button-1 cal-button-size" onclick="appendNumer('1')">1</button>
-                    <button class="cal-button-2 cal-button-size" onclick="appendNumer('2')">2</button>
-                    <button class="cal-button-3 cal-button-size" onclick="appendNumer('3')">3</button>
+                    <div class="cal-btn-block btn-block-1"><button class="cal-button-1 cal-button-size" onclick="appendNumer('1')">1</button></div>
+                    <div class="cal-btn-block btn-block-2"><button class="cal-button-2 cal-button-size" onclick="appendNumer('2')">2</button></div>
+                    <div class="cal-btn-block btn-block-3"><button class="cal-button-3 cal-button-size" onclick="appendNumer('3')">3</button></div>
 
 
-                    <button class="cal-button-0 cal-button-size" onclick="appendNumer('0')">0</button>
-                    <button class="cal-button-dot cal-button-size" onclick="appendNumer('.')">.</button>
+                    <div class="cal-btn-block btn-block-0"><button class="cal-button-0 cal-button-size" onclick="appendNumer('0')">0</button></div>
+                    <div class="cal-btn-block btn-block-dot"><button class="cal-button-dot cal-button-size" onclick="appendNumer('.')">.</button></div>
                 </div>
             </div>
         </div>
